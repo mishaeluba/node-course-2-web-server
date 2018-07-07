@@ -49,12 +49,17 @@ app.get('/about',(req,res)=> {
     });
 });
 
+app.get('/projects',(req, res) => {
+    res.render('projects.hbs', {
+        PageTitle: `Projects`
+
 // /bad - send back json with errorMessage
-app.get('/bad', (req, res) => {
-res.send({
-    errorMessage: 'Unable to handle request'
+    });
+  app.get ('/bad', (req, res) => {
+res.send
+    errorMessage:'Unable to handle request'
+   });
 });
-});
-app.listen(port, () => {
+ app.listen(port, () => {
     console.log(`server is up on port ${port} `);
 });
